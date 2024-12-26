@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        background-image: url(image.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: 100;
+        font-size: 8px;
+      }
+      .top {
+        text-align: right;
+      }
+      #head {
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        text-transform: capitalize;
+        margin-left: 720px;
+        margin-top: 10px;
+      }
+      nav {
+        margin: 12px;
+        padding-top: 10px;
+      }
+
+      nav a {
+        font-size: 1.3rem;
+        margin: 12px;
+        padding: 8px;
+        text-decoration: none;
+        color: black;
+      }
+      nav a:hover {
+        background-color: darkgray;
+        color: white;
+      }
+      .main {
+        background-color: rgb(169, 169, 169, 0.5);
+        width: 40%;
+        height: auto;
+        margin: 120px 800px;
+        text-align: center;
+        padding: 25px;
+      }
+
+      .name {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: bold;
+
+        text-align: left;
+        margin: 0 32px;
+      }
+      .name span {
+        letter-spacing: 1rem;
+        font-size: 2em;
+      }
+      .nameDetails {
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: bold;
+        line-height: 52px;
+        margin: 32px 32px;
+      }
+      button {
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 12px;
+        border-radius: 7px;
+        
+      }
+      button:hover {
+        background-color: rgb(15, 7, 7);
+        color: white;
+        cursor: pointer;
+      }
+      .main:hover {
+        animation: hoverEffect 3s ease-in-out forwards;
+      }
+      /* @keyframes hoverEffect {
+        0% {
+          color: white;
+          transform: scale(1.2);
+          background-color: steelblue;
+          border-radius: 15px;
+        }
+        50% {
+          transform: scale(1.1);
+          background-color: skyblue;
+          border-radius: 15%;
+        }
+        100% {
+          transform: scale(1);
+          background-color: rgb(211, 155, 228);
+          border-radius: 30%;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head">PORTFOLIO</div>
+    <div class="top">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Experience</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    <hr />
+    <main>
+      <div class="main">
+        <p class="name">
+          I'm<br />
+          <span>Prakavi</span>
+        </p>
+        <p class="nameDetails">
+          a front-end developer specialize in creating responsive, user-friendly
+          web applications using HTML, CSS, Bootstrap, and JavaScript.
+        </p>
+        <button>Hire Me</button>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

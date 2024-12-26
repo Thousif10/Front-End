@@ -1,0 +1,90 @@
+body {
+   font-family: Arial, sans-serif;
+   background: linear-gradient(135deg, #74ebd5, #9face6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   overflow: hidden;
+ }
+ 
+ .login-container {
+   background: rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(10px);
+   border-radius: 12px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   width: 350px;
+   padding: 30px 40px;
+   animation: fadeIn 1.5s ease-in-out;
+ }
+ 
+ .login-form h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: #ffffff;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+ }
+ 
+ .login-form label {
+   display: block;
+   margin-bottom: 10px;
+   font-weight: bold;
+   color: #ffffff;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+ }
+ 
+ .login-form input {
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 20px;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 8px;
+   font-size: 14px;
+   background: rgba(255, 255, 255, 0.2);
+   color: #ffffff; /* Text color */
+   text-shadow: none; /* Remove text shadow for better visibility */
+   caret-color: #ffffff; /* Cursor color matches text */
+}
+
+.login-form input::placeholder {
+   color: rgba(255, 255, 255, 0.7); /* Placeholder text */
+}
+
+ 
+ .login-form input:focus {
+   outline: none;
+   border-color: #ffffff;
+   background: rgba(255, 255, 255, 0.3);
+   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+ }
+ 
+ .login-form button {
+   width: 100%;
+   padding: 12px;
+   background: linear-gradient(135deg, #ff7eb3, #ff758c);
+   color: #ffffff;
+   border: none;
+   border-radius: 8px;
+   font-size: 16px;
+   cursor: pointer;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+   transition: transform 0.2s ease, background 0.3s ease;
+ }
+ 
+ .login-form button:hover {
+   transform: scale(1.05);
+   background: linear-gradient(135deg, #ff5e8c, #ff6fa1);
+ }
+ 
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+     transform: scale(0.9);
+   }
+   to {
+     opacity: 1;
+     transform: scale(1);
+   }
+ }
+ 
